@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            width: 600px;
+            height: 250px;
+            margin: auto;
+        }
+
+        p {
+            color: blue;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+
+        }
+
+        button {
+            position: inherit;
+            margin-top: 10px;
+
+        }
+    </style>
+    <title>Somthing Event</title>
+</head>
+
+<body>
+    <div>
+        <h1>Click Event</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis tempore autem enim sint illum quam
+            excepturi facere? Minus placeat necessitatibus hic perferendis pariatur atque aut vel consequuntur, nostrum
+            consectetur molestiae.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis tempore autem enim
+            sint illum quam
+            excepturi facere? Minus placeat necessitatibus hic perferendis pariatur atque aut vel consequuntur, nostrum
+            consectetur molestiae.</p>
+        <button id="but-p">Previous Font</button>
+        <button id="but-n">Next Font</button>
+        <button id="but-c">Change Color</button>
+    </div>
+
+    <script>
+
+        document.getElementById("but-c").addEventListener("click", () => {
+            document.querySelector("p").setAttribute("style", "color: red;")
+        });
+
+
+        document.getElementById("but-n").addEventListener("click", () => {
+            document.querySelector("p").setAttribute("style", "color: red; font-size: 20px;")
+        });
+
+        document.getElementById("but-p").addEventListener("click", () => {
+            document.querySelector("p").setAttribute("style", "color: blue; font-size: 15px;")
+        });
+
+    </script>
+</body>
+
+</html>
